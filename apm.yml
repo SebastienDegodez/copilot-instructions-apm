@@ -1,0 +1,11 @@
+name: copilot-instructions-apm
+version: 1.0.0
+description: A comprehensive codebase of best practices, coding rules, and workflow automation for AI-assisted development with GitHub Copilot. Includes DDD, Clean Architecture, testing, commit conventions, and more. Reference implementation for modern .NET backend projects.
+author: sebastiendegodez
+
+scripts:
+  start: "RUST_LOG=debug codex --skip-git-repo-check hello-world.prompt.md"
+  llm: "llm hello-world.prompt.md -m github/gpt-4o-mini"
+
+dependencies:
+
